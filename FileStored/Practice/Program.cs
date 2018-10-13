@@ -113,6 +113,7 @@ namespace Practice
             {
                 foreach(var item in DR.ItemArray)
                     Console.WriteLine(item);
+                Console.WriteLine();
 
             }
         }
@@ -139,7 +140,7 @@ namespace Practice
             Folder newFolder = list.RootFolder;
             con.Load(newFolder);
             con.ExecuteQuery();
-            int count = 0;
+            
             foreach (DataRow row in data.Rows)
             {
                 bool flag = true;
@@ -165,8 +166,8 @@ namespace Practice
                         String CreatedBy = row[1].ToString();
                         int depart = Convert.ToInt32(row[2]);
                         String Status = (row[3]).ToString();
-                        Console.WriteLine(FilePath);
-                        Console.WriteLine(CreatedBy);
+                        //Console.WriteLine(FilePath);
+                        //Console.WriteLine(CreatedBy);
 
                         FileCreationInformation fci = new FileCreationInformation();
                         fci.Content = System.IO.File.ReadAllBytes(FilePath);
@@ -185,7 +186,7 @@ namespace Practice
                         newItem.Update();
                         con.ExecuteQuery();
                         
-                        Console.WriteLine("Done");
+                        Console.WriteLine(Filename+" is Done");
                         UploadStatus = "Success";
                         Reason = "None";
                     }
@@ -259,5 +260,8 @@ namespace Practice
             } while (ck.Key != ConsoleKey.Enter);
             return SC;
         }
+        
+               
+
     }
 }
