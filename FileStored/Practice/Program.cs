@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-
 using System.Linq;
 using System.Security;
 using DocumentFormat.OpenXml.Spreadsheet;
@@ -20,47 +19,47 @@ namespace Practice
             String UserName = Console.ReadLine();
             Console.WriteLine("please enter the password");
             SecureString Password = GetPassword();
-            using (ClientContext con = new ClientContext("https://acuvatehyd.sharepoint.com/teams/My_Site"))
+            using (ClientContext clientContext = new ClientContext("https://acuvatehyd.sharepoint.com/teams/My_Site"))
             {
-                con.Credentials = new SharePointOnlineCredentials(UserName, Password);
-                Web web = con.Web;
-                List RList = con.Web.Lists.GetByTitle("Documents");
-                con.Load(RList);
-                con.ExecuteQuery();
-                Folder Rfolder = RList.RootFolder;
-                FileCollection Allfile = Rfolder.Files;
-                con.Load(Allfile);
-                con.ExecuteQuery();
-                foreach(File fs in Allfile)
+                clientContext.Credentials = new SharePointOnlineCredentials(UserName, Password);
+                Web web = clientContext.Web;
+                List RList = clientContext.Web.Lists.GetByTitle("Documents");
+                clientContext.Load(RList);
+                clientContext.ExecuteQuery();
+                Folder Rootfolder = RList.RootFolder;
+                FileCollection Allfile = Rootfolder.Files;
+                clientContext.Load(Allfile);
+                clientContext.ExecuteQuery();
+                foreach(File PresentFile in Allfile)
                 {
-                    File Rfile = fs;
-                    con.Load(Rfile);
-                    con.ExecuteQuery();
-                    if (Rfile.Name.Equals("FilesInformation.xlsx"))
+                    File file = PresentFile;
+                    clientContext.Load(file);
+                    clientContext.ExecuteQuery();
+                    if (file.Name.Equals("FilesInformation.xlsx"))
                     {
-                        InsertIntoDataTable(con, Rfile.Name);
+                        InsertIntoDataTable(clientContext, file.Name);
                         break;
                     }
                 }
             }
-            Console.WriteLine("\n\nUploading successfully completed");
+            
             Console.ReadKey();
         }
-        static void InsertIntoDataTable(ClientContext con,String fileName)
+        static void InsertIntoDataTable(ClientContext clientContext, String fileName)
         {
             string strErrorMsg = string.Empty;
-            string RootFile = "Documents";
+            
             try
             {
                 DataTable dataTable = new DataTable("FileInformation");
-                List list = con.Web.Lists.GetByTitle(RootFile);
-                con.Load(list.RootFolder);
-                con.ExecuteQuery();
+                List list = clientContext.Web.Lists.GetByTitle("Documents");
+                clientContext.Load(list.RootFolder);
+                clientContext.ExecuteQuery();
                 string fileServerRelativeUrl = list.RootFolder.ServerRelativeUrl + "/" + fileName;
-                Microsoft.SharePoint.Client.File file = con.Web.GetFileByServerRelativeUrl(fileServerRelativeUrl);
+                Microsoft.SharePoint.Client.File file = clientContext.Web.GetFileByServerRelativeUrl(fileServerRelativeUrl);
                 ClientResult<System.IO.Stream> data = file.OpenBinaryStream();
-                con.Load(file);
-                con.ExecuteQuery();
+                clientContext.Load(file);
+                clientContext.ExecuteQuery();
                 using (System.IO.MemoryStream mStream = new System.IO.MemoryStream())
                 {
                     if (data != null)
@@ -77,7 +76,7 @@ namespace Practice
                             IEnumerable<Row> rows = sheetData.Descendants<Row>();
                             foreach (Cell cell in rows.ElementAt(0))
                             {
-                                string str = GetCellValue(con, document, cell);
+                                string str = GetCellValue(clientContext, document, cell);
                                 dataTable.Columns.Add(str);
                             }
                             foreach (Row row in rows)
@@ -87,7 +86,7 @@ namespace Practice
                                     DataRow dataRow = dataTable.NewRow();
                                     for (int i = 0; i < row.Descendants<Cell>().Count(); i++)
                                     {
-                                        dataRow[i] = GetCellValue(con, document, row.Descendants<Cell>().ElementAt(i));
+                                        dataRow[i] = GetCellValue(clientContext, document, row.Descendants<Cell>().ElementAt(i));
                                     }
                                     dataTable.Rows.Add(dataRow);
                                 }
@@ -98,9 +97,9 @@ namespace Practice
                 }
                 OriginaldataTable = dataTable.Copy();
                 
-                UploadFile(con,dataTable, fileName);
-                string FN=ExportToExcelSheet();
-                UploadFileToSharepoint(con,FN+".xlsx");
+                UploadFile(clientContext, dataTable, fileName);
+                string FileName=ExportToExcelSheet();
+                UploadFileToSharepoint(clientContext, FileName+".xlsx");
             }
             catch (Exception e)
             {
@@ -121,26 +120,27 @@ namespace Practice
         //}
         static void UpdateDataTable(String FilePath,String Reason,String Status)
         {
+            int Column = OriginaldataTable.Columns.Count;
             foreach (DataRow DR in OriginaldataTable.Rows)
             {
                 if(DR[0].Equals(FilePath))
                 {
-                    DR[4] = Status;
-                    DR[5] = Reason;
+                    DR[Column - 2] = Status;
+                    DR[Column - 1] = Reason;
                 }
             }
         }
-        static void UploadFile(ClientContext con,DataTable data,String fileName)
+        static void UploadFile(ClientContext clientContext, DataTable data,String fileName)
         {
             String Reason = "";
             String UploadStatus = "";
             String FilePath = "";
-            List list = con.Web.Lists.GetByTitle("Documents");
-            con.Load(list);
-            con.ExecuteQuery();
+            List list = clientContext.Web.Lists.GetByTitle("Documents");
+            clientContext.Load(list);
+            clientContext.ExecuteQuery();
             Folder newFolder = list.RootFolder;
-            con.Load(newFolder);
-            con.ExecuteQuery();
+            clientContext.Load(newFolder);
+            clientContext.ExecuteQuery();
             
             foreach (DataRow row in data.Rows)
             {
@@ -172,23 +172,38 @@ namespace Practice
                         //Console.WriteLine(FilePath);
                         //Console.WriteLine(CreatedBy);
 
-                        FileCreationInformation fci = new FileCreationInformation();
-                        fci.Content = System.IO.File.ReadAllBytes(FilePath);
-                        fci.Url = Filename;
-                        fci.Overwrite = true;
+                        FileCreationInformation File = new FileCreationInformation();
+                        File.Content = System.IO.File.ReadAllBytes(FilePath);
+                        File.Url = Filename;
+                        File.Overwrite = true;
 
-                        File fileToUpload = newFolder.Files.Add(fci);
-                        con.Load(fileToUpload);
-                        con.ExecuteQuery();
+                        File fileToUpload = newFolder.Files.Add(File);
+                        clientContext.Load(fileToUpload);
+                        clientContext.ExecuteQuery();
 
                         var newItem = fileToUpload.ListItemAllFields;
                         newItem["CreatedByThisFile"] = CreatedBy.ToString();
                         newItem["Size"] = fileToUpload.Length;
                         newItem["Dept"] = depart;
-                        newItem["Status"] = Status.ToString();
+                        Microsoft.SharePoint.Client.Field field = list.Fields.GetByInternalNameOrTitle("Status");
+                        clientContext.Load(field);
+                        clientContext.ExecuteQuery();
+                        FieldChoice fieldChoices = clientContext.CastTo<FieldChoice>(field);
+                        string[] StatusArray = Status.Split(':');
+                        string finalyStatus="";
+                        for(int count=0;count<StatusArray.Length;count++)
+                        {
+                            if (fieldChoices.Choices.Contains(StatusArray[count]))
+                            if (count == StatusArray.Length - 1)
+                                finalyStatus = StatusArray[count];
+                            else
+                                finalyStatus = StatusArray[count]+";";
+                        }
+
+                        newItem["Status"] = finalyStatus;
                         newItem["TypeOfFile"] = FileType.ToString();
                         newItem.Update();
-                        con.ExecuteQuery();
+                        clientContext.ExecuteQuery();
                         
                         Console.WriteLine(Filename+" is Done");
                         UploadStatus = "Success";
@@ -205,10 +220,8 @@ namespace Practice
                 {
                     Console.WriteLine(ex);
                     break;
-                }
-                
-            }
-                    
+                }   
+            }   
         }
         static string GetCellValue(ClientContext clientContext, SpreadsheetDocument document, Cell cell)
         {
@@ -272,7 +285,7 @@ namespace Practice
             {
                 Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
                 excelApp.Workbooks.Add();
-                Microsoft.Office.Interop.Excel._Worksheet workSheet = excelApp.ActiveSheet;
+                Microsoft.Office.Interop.Excel.Worksheet workSheet = excelApp.ActiveSheet;
                 for (int i = 0; i < Table.Columns.Count; i++)
                 {
                     workSheet.Cells[1, (i + 1)] = Table.Columns[i].ColumnName;
@@ -296,17 +309,17 @@ namespace Practice
             }
             return ExcelFilePath;
         }
-        static void UploadFileToSharepoint(ClientContext con, String FileLocation)
+        static void UploadFileToSharepoint(ClientContext clientContext, String FileLocation)
         {
             try
             {
 
-                List list = con.Web.Lists.GetByTitle("Documents");
-                con.Load(list);
-                con.ExecuteQuery();
+                List list = clientContext.Web.Lists.GetByTitle("Documents");
+                clientContext.Load(list);
+                clientContext.ExecuteQuery();
                 Folder Root = list.RootFolder;
-                con.Load(Root);
-                con.ExecuteQuery();
+                clientContext.Load(Root);
+                clientContext.ExecuteQuery();
                 int last = FileLocation.LastIndexOf("\\");
                 String Filename = FileLocation.Substring(last + 1);
                 FileCreationInformation fci = new FileCreationInformation();
@@ -314,14 +327,14 @@ namespace Practice
                 fci.Url = Filename;
                 fci.Overwrite = true;
                 File fileToUpload = Root.Files.Add(fci);
-                con.Load(fileToUpload);
-                con.ExecuteQuery();
+                clientContext.Load(fileToUpload);
+                clientContext.ExecuteQuery();
             }
             catch(Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-           
+            Console.WriteLine("Uploading successfully completed");
         }
     }
 }
