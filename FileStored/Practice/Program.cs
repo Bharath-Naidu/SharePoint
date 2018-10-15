@@ -11,7 +11,7 @@ namespace Practice
 {
     class Program
     {
-        public static DataTable OriginaldataTable=new DataTable("ExcelData");
+        public static DataTable OriginaldataTable=new DataTable("ExcelData"); //for storing the excel data
         static void Main(string[] args)
         {
             
@@ -35,9 +35,9 @@ namespace Practice
                     File file = PresentFile;
                     clientContext.Load(file);
                     clientContext.ExecuteQuery();
-                    if (file.Name.Equals("FilesInformation.xlsx"))
+                    if (file.Name.Equals("FilesInformation.xlsx")) //compare the each file on root folder
                     {
-                        InsertIntoDataTable(clientContext, file.Name);
+                        InsertIntoDataTable(clientContext, file.Name);//if it found then read the data from excel
                         break;
                     }
                 }
@@ -45,18 +45,18 @@ namespace Practice
             
             Console.ReadKey();
         }
-        static void InsertIntoDataTable(ClientContext clientContext, String fileName)
-        {
+        static void InsertIntoDataTable(ClientContext clientContext, String fileName)//this method is used to read the
+        {                                                                           //data from excel then stored on datatble
             string strErrorMsg = string.Empty;
             
             try
             {
-                DataTable dataTable = new DataTable("FileInformation");
+                DataTable dataTable = new DataTable("FileInformation");//Use temporary datatble 
                 List list = clientContext.Web.Lists.GetByTitle("Documents");
                 clientContext.Load(list.RootFolder);
                 clientContext.ExecuteQuery();
                 string fileServerRelativeUrl = list.RootFolder.ServerRelativeUrl + "/" + fileName;
-                Microsoft.SharePoint.Client.File file = clientContext.Web.GetFileByServerRelativeUrl(fileServerRelativeUrl);
+                Microsoft.SharePoint.Client.File file = clientContext.Web.GetFileByServerRelativeUrl(fileServerRelativeUrl);//Extracting the file
                 ClientResult<System.IO.Stream> data = file.OpenBinaryStream();
                 clientContext.Load(file);
                 clientContext.ExecuteQuery();
@@ -74,12 +74,12 @@ namespace Practice
                             Worksheet workSheet = worksheetPart.Worksheet;
                             SheetData sheetData = workSheet.GetFirstChild<SheetData>();
                             IEnumerable<Row> rows = sheetData.Descendants<Row>();
-                            foreach (Cell cell in rows.ElementAt(0))
+                            foreach (Cell cell in rows.ElementAt(0))            //reading the file colums
                             {
                                 string str = GetCellValue(clientContext, document, cell);
                                 dataTable.Columns.Add(str);
                             }
-                            foreach (Row row in rows)
+                            foreach (Row row in rows)                           //reading the file rows
                             {
                                 if (row != null)
                                 {
@@ -95,11 +95,11 @@ namespace Practice
                         }
                     }
                 }
-                OriginaldataTable = dataTable.Copy();
+                OriginaldataTable = dataTable.Copy();                       //copied to temporary datatble to original datatable
                 
-                UploadFile(clientContext, dataTable, fileName);
+                UploadFile(clientContext, dataTable, fileName);             //Here Upload the all files to sharepoint
                 string FileName=ExportToExcelSheet();
-                UploadFileToSharepoint(clientContext, FileName+".xlsx");
+                UploadExcelFileToSharepoint(clientContext, FileName+".xlsx"); //Upload the updated sharepoint 
             }
             catch (Exception e)
             {
@@ -152,15 +152,15 @@ namespace Practice
                     FilePath = row[0].ToString();
                     System.IO.FileInfo fileInfo = new System.IO.FileInfo(FilePath);
                     string FileType = fileInfo.Extension;
-                    if (fileInfo.Exists)
+                    if (fileInfo.Exists)    //read the file size
                         bytes = fileInfo.Length;
-                    else
+                    else                    // if the file not exit then status will be failed
                     {
                         UploadStatus = "Failed";
                         Reason = "File not exist on given path";
                         flag = false;
                     }
-                    if (flag == true && (bytes < 10000000))
+                    if (flag == true && (bytes < 10000000)) //checking the file size before upload
                     {
 
                         int last = FilePath.LastIndexOf("\\");
@@ -172,7 +172,7 @@ namespace Practice
                         //Console.WriteLine(FilePath);
                         //Console.WriteLine(CreatedBy);
 
-                        FileCreationInformation File = new FileCreationInformation();
+                        FileCreationInformation File = new FileCreationInformation(); //Uploading the file here
                         File.Content = System.IO.File.ReadAllBytes(FilePath);
                         File.Url = Filename;
                         File.Overwrite = true;
@@ -185,13 +185,13 @@ namespace Practice
                         newItem["CreatedByThisFile"] = CreatedBy.ToString();
                         newItem["Size"] = fileToUpload.Length;
                         newItem["Dept"] = depart;
-                        Microsoft.SharePoint.Client.Field field = list.Fields.GetByInternalNameOrTitle("Status");
+                        Microsoft.SharePoint.Client.Field field = list.Fields.GetByInternalNameOrTitle("Status"); //here reading the status of the file
                         clientContext.Load(field);
                         clientContext.ExecuteQuery();
                         FieldChoice fieldChoices = clientContext.CastTo<FieldChoice>(field);
                         string[] StatusArray = Status.Split(':');
                         string finalyStatus="";
-                        for(int count=0;count<StatusArray.Length;count++)
+                        for(int count=0;count<StatusArray.Length;count++) 
                         {
                             if (fieldChoices.Choices.Contains(StatusArray[count]))
                             if (count == StatusArray.Length - 1)
@@ -214,7 +214,7 @@ namespace Practice
                         Reason = "File size is to high";
                         UploadStatus = "Failed";
                     }
-                    UpdateDataTable(FilePath,Reason,UploadStatus);
+                    UpdateDataTable(FilePath,Reason,UploadStatus); //after taking the all fields from file then update the excel sheet througth datatble
                 }
                 catch (Exception ex)
                 {
@@ -277,7 +277,7 @@ namespace Practice
             } while (ck.Key != ConsoleKey.Enter);
             return SC;
         }
-        static string ExportToExcelSheet()
+        static string ExportToExcelSheet() //now the all information in the datatble now it is converted to excel
         {
             DataTable Table = OriginaldataTable.Copy();
             string ExcelFilePath = "D:\\File\\FilesInformation";
@@ -286,7 +286,7 @@ namespace Practice
                 Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
                 excelApp.Workbooks.Add();
                 Microsoft.Office.Interop.Excel.Worksheet workSheet = excelApp.ActiveSheet;
-                for (int i = 0; i < Table.Columns.Count; i++)
+                for (int i = 0; i < Table.Columns.Count; i++)//retriving the column from datatable and stored on excel
                 {
                     workSheet.Cells[1, (i + 1)] = Table.Columns[i].ColumnName;
                 }
@@ -299,8 +299,8 @@ namespace Practice
                 }
                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(ExcelFilePath+".xlsx");
                 if (fileInfo.Exists)
-                    fileInfo.Delete();
-                workSheet.SaveAs(ExcelFilePath);
+                    fileInfo.Delete(); //delete the existing one
+                workSheet.SaveAs(ExcelFilePath); //saved on given path
                 excelApp.Quit(); 
             }
             catch (Exception ex)
@@ -309,7 +309,7 @@ namespace Practice
             }
             return ExcelFilePath;
         }
-        static void UploadFileToSharepoint(ClientContext clientContext, String FileLocation)
+        static void UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation)
         {
             try
             {
