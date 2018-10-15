@@ -15,7 +15,9 @@ namespace Practice
         public static DataTable OriginaldataTable=new DataTable("ExcelData");
         static void Main(string[] args)
         {
-            String UserName = "bharat.naidu@acuvate.com";
+            
+            Console.WriteLine("Please enter the User Name");
+            String UserName = Console.ReadLine();
             Console.WriteLine("please enter the password");
             SecureString Password = GetPassword();
             using (ClientContext con = new ClientContext("https://acuvatehyd.sharepoint.com/teams/My_Site"))
@@ -96,8 +98,8 @@ namespace Practice
                 }
                 OriginaldataTable = dataTable.Copy();
                 
-                ReadFile(con,dataTable, fileName);
-                String FN=ExportToExcelSheet();
+                UploadFile(con,dataTable, fileName);
+                string FN=ExportToExcelSheet();
                 UploadFileToSharepoint(con,FN+".xlsx");
             }
             catch (Exception e)
@@ -128,7 +130,7 @@ namespace Practice
                 }
             }
         }
-        static void ReadFile(ClientContext con,DataTable data,String fileName)
+        static void UploadFile(ClientContext con,DataTable data,String fileName)
         {
             String Reason = "";
             String UploadStatus = "";
@@ -270,17 +272,13 @@ namespace Practice
             {
                 Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
                 excelApp.Workbooks.Add();
-                // single worksheet
                 Microsoft.Office.Interop.Excel._Worksheet workSheet = excelApp.ActiveSheet;
-                // column headings
                 for (int i = 0; i < Table.Columns.Count; i++)
                 {
                     workSheet.Cells[1, (i + 1)] = Table.Columns[i].ColumnName;
                 }
-                // rows
                 for (int i = 0; i < Table.Rows.Count; i++)
                 {
-                    // to do: format datetime values before printing
                     for (int j = 0; j < Table.Columns.Count; j++)
                     {
                         workSheet.Cells[(i + 2), (j + 1)] = Table.Rows[i][j];
