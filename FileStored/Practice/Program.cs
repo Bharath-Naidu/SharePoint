@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security;
 using DocumentFormat.OpenXml.Spreadsheet;
 using DocumentFormat.OpenXml.Packaging;
+using EX=System.IO;
 
 namespace Practice
 {
@@ -94,15 +95,25 @@ namespace Practice
                     }
                 }
                 OriginaldataTable = dataTable.Copy();                       //copied to temporary datatble to original datatable   
-                UploadFile(clientContext,dataTable,fileName);             //Here Upload the all files to sharepoint
-                string FileNameAfterChange=ExportToExcelSheet();
+               // display();
+                UploadFile(clientContext, dataTable, fileName);             //Here Upload the all files to sharepoint
+                string FileNameAfterChange = ExportToExcelSheet();
                 UploadExcelFileToSharepoint(clientContext, FileNameAfterChange + ".xlsx"); //Upload the updated sharepoint 
             }
             catch (Exception e)
             {
+                LogClass.RecordException(e);
                 strErrorMsg = e.Message;
             }
         }
+       //static void display()
+       // {
+       //     foreach(DataRow dr in OriginaldataTable.Rows)
+       //     {
+       //         foreach(var item in dr.ItemArray)
+       //             Console.WriteLine(item);
+       //     }
+       // }
         static void UpdateDataTable(String FilePath,String Reason,String Status)
         {
             int Columns = OriginaldataTable.Columns.Count;
@@ -133,20 +144,25 @@ namespace Practice
                     FilePath = row[0].ToString();
                     System.IO.FileInfo fileInfo = new System.IO.FileInfo(FilePath);
                     string FileType = fileInfo.Extension;
-                    if (fileInfo.Exists)                         //read the file size
-                        bytes = fileInfo.Length;
-                    else                                        // if the file not exit then status will be failed
-                    {
-                        UploadStatus = "Failed";
-                        Reason = "File not exist on given path";
-                        flag = false;
-                    }
+                    //try
+                    //{
+                        if (fileInfo.Exists)                         //read the file size
+                            bytes = fileInfo.Length;
+                        else
+                            throw new EX.FileNotFoundException("File not found");
+                    //}
+                    //catch (Exception ex)
+                    //{
+                    //    UploadStatus = "Failed";
+                    //    Reason = "File not exist on given path";
+                    //    flag = false;
+                    //}
                     if (flag == true && (bytes < 10000000)) //checking the file size before upload & file size is given range or not
                     {
                         int FileNameStarts = FilePath.LastIndexOf("\\");
                         string Filename = FilePath.Substring(FileNameStarts + 1);  //spliting the file name from file path
                         string CreatedBy = row[1].ToString();       //adding the column to the files 
-                        int depart = Convert.ToInt32(row[2]);
+                        string depart = row[2].ToString();
                         string Status = (row[3]).ToString();
                         FileCreationInformation File = new FileCreationInformation(); //Uploading the file to sharepoint library
                         File.Content = System.IO.File.ReadAllBytes(FilePath);
@@ -158,12 +174,12 @@ namespace Practice
                         var newItem = fileToUpload.ListItemAllFields;   //creating the column items to the file 
                         newItem["CreatedByThisFile"] = CreatedBy.ToString();
                         newItem["Size"] = fileToUpload.Length;
-                        newItem["Dept"] = depart;
+                        newItem["Departement"] = depart;
                         Microsoft.SharePoint.Client.Field field = list.Fields.GetByInternalNameOrTitle("Status"); //here reading the status of the file
                         clientContext.Load(field);
                         clientContext.ExecuteQuery();
                         FieldChoice fieldChoices = clientContext.CastTo<FieldChoice>(field);
-                        string[] StatusArray = Status.Split(':');
+                        string[] StatusArray = Status.Split(',');
                         string finalyStatus="";
                         for(int count=0;count<StatusArray.Length;count++) 
                         {
@@ -177,23 +193,34 @@ namespace Practice
                         newItem["TypeOfFile"] = FileType.ToString();
                         newItem.Update();
                         clientContext.ExecuteQuery();
-                        Console.WriteLine(Filename+" is Done");
+                       // Console.WriteLine(Filename+" is Done");
                         UploadStatus = "Success";
                         Reason = "";
                     }
                     else if (flag)
                     {
-                        Reason = "File size is to high";
-                        UploadStatus = "Failed";
+                        throw new Exception("File Size to high");
+                        //Reason = "File size is to high";
+                        //UploadStatus = "Failed";
+                        
                     }
-                    UpdateDataTable(FilePath,Reason,UploadStatus); //after taking the all fields from file then update the excel sheet througth datatble
+                    //after taking the all fields from file then update the excel sheet througth datatble
+                }
+                catch (EX.FileNotFoundException ex)
+                {
+                    UploadStatus = "Failed";
+                    Reason = ex.Message;
+                    LogClass.RecordException(ex);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
-                    break;
-                }   
-            }   
+                    UploadStatus = "Failed";
+                    Reason = ex.Message;
+                    LogClass.RecordException(ex);
+                }
+                UpdateDataTable(FilePath, Reason, UploadStatus);
+            }
+            
         }
         static string GetCellValue(SpreadsheetDocument document, Cell cell)
         {
@@ -220,6 +247,7 @@ namespace Practice
             catch (Exception e)
             {
                 strErrorMsg = e.Message;
+                LogClass.RecordException(e);
             }
                        return value;
         }
@@ -259,13 +287,15 @@ namespace Practice
                 excelApp.Quit(); 
             }
             catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
+            { 
+               LogClass.RecordException(ex);
+                throw new Exception();
             }
             return ExcelFilePath;
         }
         static void UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) //this is used to upload the excel to sharepoint 
         {
+            
             try
             {
                 List list = clientContext.Web.Lists.GetByTitle(Constant.RootFolder);
@@ -290,9 +320,10 @@ namespace Practice
             }
             catch(Exception ex)
             {
+                LogClass.RecordException(ex);
                 throw new Exception(ex.Message);
             }
-            Console.WriteLine("Uploading successfully completed");
+            Console.WriteLine("\n\n\nUploading successfully completed.............");
         }
     }
 }

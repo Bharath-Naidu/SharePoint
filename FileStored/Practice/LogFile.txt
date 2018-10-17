@@ -1,0 +1,922 @@
+﻿--------10/17/2018 10:19:19 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:19:19 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+--------10/17/2018 10:19:19 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+--------10/17/2018 10:19:19 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+--------10/17/2018 10:21:14 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:21:14 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:23:42 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:23:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:25:54 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:26:30 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:27:37 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:56 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:32:56 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:32:57 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:34:35 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:37:29 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:37:31 AM
+--------   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 307
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+--------10/17/2018 10:37:31 AM
+--------   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 312
+   at Practice.Program.InsertIntoDataTable(ClientContext clientContext, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 100
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 143
+--------File not found--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 193
+--------File Size to high--------
+
+
+--------10/17/2018 10:39:17 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 156
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:04 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+--------10/17/2018 10:56:04 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:04 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:04 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:04 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:05 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:05 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:05 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:56:05 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+--------10/17/2018 10:56:05 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+--------10/17/2018 10:56:05 AM
+--------   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 165
+--------Input string was not in a correct format.--------
+
+
+--------10/17/2018 10:57:13 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+--------10/17/2018 10:57:25 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+--------10/17/2018 10:57:25 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+--------10/17/2018 11:00:57 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:01:09 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:01:09 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:01:14 AM
+--------   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 317
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+
+
+--------10/17/2018 11:01:14 AM
+--------   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 322
+   at Practice.Program.InsertIntoDataTable(ClientContext clientContext, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 101
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+
+
+--------10/17/2018 11:06:11 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:06:22 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:06:22 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:08:29 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:08:42 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:08:42 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:08:49 AM
+--------   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 319
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+
+
+--------10/17/2018 11:08:49 AM
+--------   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 324
+   at Practice.Program.InsertIntoDataTable(ClientContext clientContext, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 101
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+
+
+--------10/17/2018 11:10:56 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:11:07 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:11:07 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:11:48 AM
+--------   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 319
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+
+
+--------10/17/2018 11:11:57 AM
+--------   at Practice.Program.UploadExcelFileToSharepoint(ClientContext clientContext, String FileLocation) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 324
+   at Practice.Program.InsertIntoDataTable(ClientContext clientContext, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 101
+--------The file https://acuvatehyd.sharepoint.com/teams/My_Site/Shared Documents/FilesInformation.xlsx is locked for shared use by bharat.naidu@acuvate.com [membership].--------
+
+
+
+
+--------10/17/2018 11:13:38 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:13:49 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:13:49 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:15:17 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:15:29 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:15:29 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:18:37 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
+--------10/17/2018 11:18:50 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 152
+--------File not found--------
+
+
+
+
+--------10/17/2018 11:18:50 AM
+--------   at Practice.Program.UploadFile(ClientContext clientContext, DataTable data, String fileName) in C:\Users\bharat.naidu\source\repos\SharePoint\Assignment\FileStored\Practice\Program.cs:line 202
+--------File Size to high--------
+
+
+
+
