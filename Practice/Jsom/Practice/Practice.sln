@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstJSOM12_10_2018_BHARATH", "FirstJSOM12_10_2018\FirstJSOM12_10_2018_BHARATH.csproj", "{EC68E273-E7F8-4037-B818-BA3D3A597B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptDemo_starting", "..\..\..\..\..\..\Downloads\JavaScriptDemo\JavaScriptDemo\JavaScriptDemo\JavaScriptDemo_starting.csproj", "{98D39F43-C3EC-4225-9719-99EF00FD6928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptDemo", "..\..\..\..\..\..\Desktop\SharePoint\2018-master\2018-master\RESTAPI_JavaScript\RESTAPI_JavaScript\JavaScriptDemo\JavaScriptDemo.csproj", "{3AA2419C-2954-487E-ABEB-CC3F367E1986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTAPI", "RESTAPI\RESTAPI.csproj", "{1EF0502E-ECD5-41E9-B436-064834661A95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC68E273-E7F8-4037-B818-BA3D3A597B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC68E273-E7F8-4037-B818-BA3D3A597B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC68E273-E7F8-4037-B818-BA3D3A597B8E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC68E273-E7F8-4037-B818-BA3D3A597B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC68E273-E7F8-4037-B818-BA3D3A597B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC68E273-E7F8-4037-B818-BA3D3A597B8E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{98D39F43-C3EC-4225-9719-99EF00FD6928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D39F43-C3EC-4225-9719-99EF00FD6928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D39F43-C3EC-4225-9719-99EF00FD6928}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{98D39F43-C3EC-4225-9719-99EF00FD6928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D39F43-C3EC-4225-9719-99EF00FD6928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D39F43-C3EC-4225-9719-99EF00FD6928}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3AA2419C-2954-487E-ABEB-CC3F367E1986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA2419C-2954-487E-ABEB-CC3F367E1986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA2419C-2954-487E-ABEB-CC3F367E1986}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3AA2419C-2954-487E-ABEB-CC3F367E1986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA2419C-2954-487E-ABEB-CC3F367E1986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA2419C-2954-487E-ABEB-CC3F367E1986}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1EF0502E-ECD5-41E9-B436-064834661A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF0502E-ECD5-41E9-B436-064834661A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF0502E-ECD5-41E9-B436-064834661A95}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1EF0502E-ECD5-41E9-B436-064834661A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF0502E-ECD5-41E9-B436-064834661A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF0502E-ECD5-41E9-B436-064834661A95}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D859AABB-A79D-4897-AB69-73098DB0522B}
+	EndGlobalSection
+EndGlobal

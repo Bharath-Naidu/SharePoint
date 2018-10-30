@@ -1,0 +1,1 @@
+bin\Debug\FirstJSOM12_10_2018.wsp

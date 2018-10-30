@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d77a9948-e50f-4a40-9a0b-a2a746c5adec" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="RESTAPI_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

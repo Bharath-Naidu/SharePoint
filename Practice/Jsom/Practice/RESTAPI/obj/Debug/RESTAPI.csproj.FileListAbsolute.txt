@@ -1,0 +1,4 @@
+C:\Users\bharat.naidu\source\repos\SharePoint\Practice\Jsom\Practice\RESTAPI\bin\Debug\RESTAPI.pdb
+C:\Users\bharat.naidu\source\repos\SharePoint\Practice\Jsom\Practice\RESTAPI\obj\Debug\RESTAPI.csproj.CoreCompileInputs.cache
+C:\Users\bharat.naidu\source\repos\SharePoint\Practice\Jsom\Practice\RESTAPI\obj\Debug\RESTAPI.dll
+C:\Users\bharat.naidu\source\repos\SharePoint\Practice\Jsom\Practice\RESTAPI\obj\Debug\RESTAPI.pdb
